@@ -8,13 +8,17 @@ fi
 clear
 echo; echo 'Installing DOS-Deflate 0.6'; echo
 echo; echo -n 'Downloading source files...'
-wget -q -O /usr/local/ddos/ddos.conf https://github.com/mayunkun/ddos/blob/master/ddos.conf
+#wget -q -O /usr/local/ddos/ddos.conf https://github.com/mayunkun/ddos/blob/master/ddos.conf
+cp ddos.conf /usr/local/ddos/ddos.conf
 echo -n '.'
-wget -q -O /usr/local/ddos/LICENSE https://github.com/mayunkun/ddos/blob/master/LICENSE
+#wget -q -O /usr/local/ddos/LICENSE https://github.com/mayunkun/ddos/blob/master/LICENSE
+cp LICENSE /usr/local/ddos/LICENSE
 echo -n '.'
-wget -q -O /usr/local/ddos/ignore.ip.list https://github.com/mayunkun/ddos/blob/master/ignore.ip.list
+#wget -q -O /usr/local/ddos/ignore.ip.list https://github.com/mayunkun/ddos/blob/master/ignore.ip.list
+cp ignore.ip.list /usr/local/ddos/ignore.ip.list
 echo -n '.'
-wget -q -O /usr/local/ddos/ddos.sh https://github.com/mayunkun/ddos/blob/master/ddos.sh
+#wget -q -O /usr/local/ddos/ddos.sh https://github.com/mayunkun/ddos/blob/master/ddos.sh
+cp ddos.sh /usr/local/ddos/ddos.sh
 chmod 0755 /usr/local/ddos/ddos.sh
 cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
 echo '...done'
